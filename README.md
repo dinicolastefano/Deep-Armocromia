@@ -131,21 +131,28 @@ If you use the DeepArmocromia dataset in your work, please cite it as:
 
 ## Bibtex
 ```
-@inproceedings{stacchio2024deep,
-  title={Deep Armocromia: A Novel Dataset for Face Seasonal Color Analysis and Classification},
-  author={Lorenzo Stacchio and
-          Marina Paolanti and
-          Francesca Spigarelli and
-          Emanuele Frontoni},
-  booktitle={European Conference on Computer Vision (ECCV) Workshops},
-  pages={xxx--yyy},
-  year={2024},
-  organization={Springer}
+@InProceedings{10.1007/978-3-031-91569-7_22,
+  author="Stacchio, Lorenzo
+  and Paolanti, Marina
+  and Spigarelli, Francesca
+  and Frontoni, Emanuele",
+  editor="Del Bue, Alessio
+  and Canton, Cristian
+  and Pont-Tuset, Jordi
+  and Tommasi, Tatiana",
+  title="Deep Armocromia: A Novel Dataset for Face Seasonal Color Analysis and Classification",
+  booktitle="Computer Vision -- ECCV 2024 Workshops",
+  year="2025",
+  publisher="Springer Nature Switzerland",
+  address="Cham",
+  pages="352--367",
+  isbn="978-3-031-91569-7"
 }
+
 
 ```
 
 ## APA
 ```
-Stacchio, L., Paolanti, M., Spigarelli, F., & Frontoni, E. (2024). Deep Armocromia: A novel dataset for face seasonal color analysis and classification. In European Conference on Computer Vision (ECCV) Workshops, (pp. xxx-yyy). Springer.
+Stacchio, L., Paolanti, M., Spigarelli, F., & Frontoni, E. (2025). Deep Armocromia: A novel dataset for face seasonal color analysis and classification. In A. Del Bue, C. Canton, J. Pont-Tuset, & T. Tommasi (Eds.), Computer Vision – ECCV 2024 Workshops (pp. 352–367). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-91569-7_22
 ```
