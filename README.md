@@ -156,3 +156,33 @@ If you use the DeepArmocromia dataset in your work, please cite it as:
 ```
 Stacchio, L., Paolanti, M., Spigarelli, F., & Frontoni, E. (2025). Deep Armocromia: A novel dataset for face seasonal color analysis and classification. In A. Del Bue, C. Canton, J. Pont-Tuset, & T. Tommasi (Eds.), Computer Vision – ECCV 2024 Workshops (pp. 352–367). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-91569-7_22
 ```
+
+# Quick Start Guide
+
+This repository now includes example code to train a model and run a simple
+prediction service. After downloading and extracting the dataset (see
+[Dataset Download](#dataset-download)), install the required Python packages:
+
+```bash
+pip install torch torchvision pandas pillow fastapi uvicorn
+```
+
+## Training
+Use `armocromia.train` to train a ResNet-18 model:
+
+```bash
+python -m armocromia.train --csv annotations.csv --root <dataset_root>
+```
+
+The script saves model weights under `models/armocromia_resnet18.pt`.
+
+## Running the service
+After training, launch the FastAPI service:
+
+```bash
+uvicorn armocromia.service:app --host 0.0.0.0 --port 8000
+```
+
+Send POST requests with an image file to `/predict` to obtain the predicted
+seasonal label.
+
